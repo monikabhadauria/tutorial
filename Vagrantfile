@@ -6,15 +6,26 @@
 VAGRANTFILE_API_VERSION = "2"
 
 machines = [{
-  :name => 'chef_server',
-  :ip => '10.21.1.10',
+  :name => 'chef-server',
+  :ip => '10.21.1.9',
   :ram => '1024'
 },
 {
   :name => 'postgres',
   :ip => '10.21.1.11',
   :ram => '2048'
-}]
+},
+{
+  :name => 'rails_app',
+  :ip => '10.21.1.12',
+  :ram => '1024'
+},
+{
+  :name => 'hound2',
+  :ip => '10.21.1.20',
+  :ram => '2048'
+}
+]
 
 machines.each do |m|
 
